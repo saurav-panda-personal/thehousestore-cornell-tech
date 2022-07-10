@@ -6,6 +6,6 @@ WORKDIR /code
 CMD ls
 COPY requirements.txt /code/
 RUN pip install -r requirements.txt
-CMD ls
+COPY wait-for-db.sh .
 COPY /app/web/. .
 CMD ls
