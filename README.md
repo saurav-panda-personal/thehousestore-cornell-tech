@@ -8,4 +8,4 @@ Requires Docker
 
 1. Create a file named `.env` and fill the .env-template variables.
 2. Run the following command to start the service
-``` docker compose up ```
+``` docker compose --env-file .env up```
